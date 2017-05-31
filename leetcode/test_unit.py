@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*
-import signal
+import platform
+import sys
 
-print "\n\nhello world"
-
-
-print(signal.SIGABRT)
-print(signal.SIG_DFL)
+hash = {}
+print "hehe" , hash.get("hehe")

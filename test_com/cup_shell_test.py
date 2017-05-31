@@ -6,7 +6,10 @@ from com_utils.shell import ShellExec
 
 shell = ShellExec()
 
-print shell.run('/bin/ls /opt/', timeout=1)
+ret = shell.run('/bin/ls /opt/', timeout=1)
+print "stdout:\n", ret["stdout"]
+print "stderr:\n", ret["stderr"]
+print "returncode\n:", ret["returncode"]
 
 # 2. 其他类，比如使用rm -rf删除某路径，获取文件MD5等
 # cup.shell.md5file(filename) # 计算一个文件的md5值。返回32位长的hex字符串。
