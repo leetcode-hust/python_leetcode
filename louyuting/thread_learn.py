@@ -25,6 +25,5 @@ def loop():
 
 print 'thread %s is running...' % threading.current_thread().name
 thread = threading.Thread(target=loop, name='LoopThread')
-thread.start()
-thread.join()
+thread.start() # 等待cpu的调度
 print 'thread %s ended.' % threading.current_thread().name
