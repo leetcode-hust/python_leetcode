@@ -17,4 +17,10 @@ print res.encoding
 print res.text
 print res.content
 print res.json()
+print "status_code", res.status_code
+print "apparent_encoding", res.apparent_encoding
+print "cookies", res.cookies
+print "headers", res.headers
+print "history", res.history
+res.close()
 
